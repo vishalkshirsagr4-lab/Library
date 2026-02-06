@@ -1,0 +1,87 @@
+.login {
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100vw;
+    background-image: url('https://i.pinimg.com/736x/28/26/ad/2826ad3fb9aaf5e4ca2cbd41b65dfc59.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box {
+    height: 70%;
+    width: 30%;
+    background-color: rgb(182, 243, 243,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px rgb(0,0,0,0.32);
+    animation: scaleAnim 0.8s linear 1 alternate;
+}
+
+@keyframes scaleAnim {
+    to { transform: scale(1);  }
+    from   { transform: scale(0.6); }
+}
+
+label {
+    font-size: 1.5rem;
+    color: rgb(8, 68, 248);
+    padding: 15px;
+}
+input {
+    width: 80%;
+    height: 40%;
+    margin: 15px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px solid rgb(120, 120, 245);
+    outline: none;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.forget {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+.submit {
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    color: blue;
+    font-size: 1.3rem;
+    background-color: green;
+    border-radius: 8px;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+.submit:active {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 8px rgb(0,0,250,0.42);
+}
+.anime {
+    position: relative;
+    transition: all 0.4s;
+}
+.anime::before {
+    position: absolute;
+    content: '';
+    background-color: royalblue;
+    height: 3px;
+    width: 0;
+    bottom: -5px;
+    transition: all 0.4s;
+}
+.anime:hover:before {
+    width: 75%;
+} 

@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+.logo-college {
+  height: 50px;
+  width: 50px;
+} 
+.logo-sec {
+  display: flex;
+  gap: 25px;
+  height: 100%;
+  align-items: center;
+  margin-left: 25px;
+}
+h2 {
+  margin-left: 20px;
+}
+.navbar {
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  background-color: #0F172A;
+  align-items: center;
+  color: #FFFFFF;
+  width: 100vw;
+}
+ol {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+  width: 20%;
+
+}
+
+li {
+  font-size: 1.2rem;
+  width: 30%;
+}
+
+.Login {
+  border: none;
+  font-size: 1.2rem;
+  background-color: #0F172A;
+   color: #FFFFFF;
+   cursor: pointer;
+}
